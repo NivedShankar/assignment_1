@@ -1,0 +1,47 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-size: cover;
+}
+.login{
+    background-color: white;
+    width: 360px;
+    border-radius: 25px;
+    border: 2px solid #055160;
+    padding: 20px;
+    margin-top: 100px;
+}
+.button
+{
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgb(144, 22, 201) , rgb(25, 0, 255));
+}
+.homeimage{
+        background-image: url("../Images/33.jpg");
+        background-size: cover;
+        height: 700px;
+}
+.image1
+{
+    background-image: url("../Images/1.jpg");
+    background-size: cover;
+    height:200px;
+}
+.card-img-top{
+    width: 215px;
+    height: 215px;
+}
+.placeimage{
+    height: 300px;
+}
+.navbg{
+    background-color: rgb(201, 195, 195);
+}
+.para{
+    font-size: 1.2rem;
+}
+.letter{
+    font-size: 2.5rem;
+}
