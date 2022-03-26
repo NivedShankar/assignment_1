@@ -1,42 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>SIGNUP</title>
     <link rel="stylesheet" href="css/style.css">
     <!---Fontawesome--->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!---Bootstrap5----->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
+
 <body background="Images/login.jpg">
-    <div class="mt-5 justify-content-center d-flex">
-        <div class="login">
-            <h5 class="text-center mt-4">SIGNUP</h5>
-            <div class="row form-group mt-5 px-4 mx-1">  
-                <input class="form-control" type="text" placeholder="Name">
-            </div>
-            <div class="row form-group mt-3 px-4 mx-1">
-                <input class="form-control" type="email" placeholder="Email">
-            </div>
-            <div class="row form-group mt-3 px-4 mx-1">
-                
-                <input class="form-control" type="password" placeholder="Password">
+    <form action="" onsubmit="return validateSign()">
+        <div class="mt-5 justify-content-center d-flex">
+            <div class="login">
+                <h5 class="text-center mt-4">SIGNUP</h5>
+                <div class="row form-group mt-5 px-4 mx-1">
+                    <input class="form-control" type="text" placeholder="Name" id="name">
+                    <label id="errorName"></label>
 
-            </div>
-            <div class="row form-group mt-3 px-4 mx-1">
-                
-                <input class="form-control" type="password" placeholder="Re-Enter Password">
+                </div>
+                <div class="row form-group  mt-3 px-4 mx-1">
+                    <input class="form-control" type="text" placeholder="Phone number" id="phone">
+                    <label id="errorphone"></label>
+                </div>
+                <div class="row form-group mt-3 px-4 mx-1">
+                    <input class="form-control" type="email" id="email" placeholder="Email">
+                    <label id="errorEmail"></label>
+                </div>
+                <div class="row form-group mt-3 px-4 mx-1">
 
+                    <input class="form-control" type="password" id="pswd" onchange="passCheck()"
+                        title="password should contain eight characters, at least one uppercase letter, one lowercase letter, one number and one special character"
+                        placeholder="Password">
+                    <label id="errorPswd"></label>
+
+                </div>
+                <div class="row form-group mt-3 px-4 mx-1">
+
+                    <input class="form-control" type="password" id="repswd" placeholder="Re-Enter Password">
+                    <label id="errorRePswd"></label>
+
+                </div>
+                <div class="d-flex justify-content-center mt-4 mb-4">
+                    <button class="btn-primary button px-5 py-2">Signup</button>
+                </div>
+                <div class="d-flex justify-content-center mt-4 mb-4">
+                    <h6 class="mt-1">Have an account?</h6>
+                    <a href="index.html" class="ms-3 text-decoration-none">Login</a>
+                </div>
             </div>
-            <div class="d-flex justify-content-center mt-4 mb-4">
-                <button class="btn-primary button px-5 py-2">Signup</button>
-            </div>
-            <div class="d-flex justify-content-center mt-4 mb-4">
-                <h6 class="mt-1">Have an account?</h6> 
-                <a href="index.html" class="ms-3 text-decoration-none">Login</a>
-             </div>
         </div>
-    </div>
-    
+    </form>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
